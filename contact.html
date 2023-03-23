@@ -11,27 +11,65 @@
       href="assest/img/nav/icons8-game-maker-16.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
   </head>
   <body class="bg-black text-white m-auto">
-    <nav class="flex p-6 justify-between z-50 sticky">
-      <div class="flex item center">
-        <img src="./assest/img/nav/LOGO.svg" alt="logo" />
+    <nav
+      class="bg-black flex flex-col w-full p-2 md:flex-row justify-between text-white relative "
+    >
+      <div class="logo-header flex justify-between">
+        <a class="p-4" href="./index.html"
+          ><img src="./assest/img/nav/LOGO.svg" alt="logo"
+        /></a>
+        <button class="navbar_toggle block md:hidden bg-orange-400 p-5">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
-      <div class="hidden md:flex justify-between">
-        <ul class="flex p-2 gap-28 px-3 mr-6">
-          <li><a href="./index.html"> Home</a></li>
-          <li><a href="./about.html">About Us </a></li>
-          <li><a href="./services.html">Services</a></li>
-          <li><a href="./news.html">News</a></li>
-        </ul>
-        <a
-          href="./contact.html"
-          class="bg-orange-500 hover:bg-orange-600 active:bg-orange-700 p-2 rounded"
-        >
-          Contact Us
-        </a>
-      </div>
+      <ul
+        class="main_nav hidden md:flex flex-col w-full md:w-[50%] md:flex-row justify-between p-5 absolute md:static bg-[rgba(0,0,0,0.8)] top-[100%]"
+      >
+        <li class=" mb-3 md:mb-0">
+          <a
+            href="./index.html"
+            class="nav-links hover:bg-orange-400 rounded-lg p-3"
+            >Home</a
+          >
+        </li>
+        <li class=" mb-3 md:mb-0">
+          <a
+            href="./services.html"
+            class="nav-links hover:bg-orange-400 rounded-lg p-3"
+            >Services</a
+          >
+        </li>
+        <li class=" mb-3 md:mb-0">
+          <a
+            href="./about.html"
+            class="nav-links hover:bg-orange-400 rounded-lg p-3"
+            >About</a
+          >
+        </li>
+        <li class=" mb-3 md:mb-0">
+          <a
+            href="./news.html"
+            class="nav-links hover:bg-orange-400 rounded-lg p-3"
+            >News</a
+          >
+        </li>
+        <li class=" mb-3 md:mb-0">
+          <a
+            href="./contact.html"
+            class="nav-links hover:bg-orange-400 rounded-lg p-3"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
     </nav>
+
     <section class="contact md:py-32">
       <div class="flex flex-col justify-center items-center">
         <div class="flex py-2 mr-auto pl-10">
@@ -231,5 +269,6 @@
       <hr />
       <p class="text-center py-5">Copyright ® 2021 Lorem All rights Rcerved</p>
     </footer>
+    <script src="./javascript/script.js"></script>
   </body>
 </html>

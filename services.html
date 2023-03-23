@@ -10,10 +10,66 @@
       href="assest/img/nav/icons8-game-maker-16.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-black text-white">
-    <nav class="flex p-6 justify-between z-50 sticky">
+    <nav
+      class="bg-black flex flex-col w-full p-2 md:flex-row justify-between text-white relative"
+    >
+      <div class="logo-header flex justify-between">
+        <a class="p-4" href="./index.html"
+          ><img src="./assest/img/nav/LOGO.svg" alt="logo"
+        /></a>
+        <button class="navbar_toggle block md:hidden bg-orange-400 p-5">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <ul
+        class="main_nav hidden md:flex flex-col w-full md:w-[50%] md:flex-row justify-between p-5 absolute md:static bg-[rgba(0,0,0,0.8)] top-[100%]"
+      >
+        <li class="mb-3 md:mb-0">
+          <a
+            href="./index.html"
+            class="nav-links hover:bg-orange-400 rounded-lg p-3"
+            >Home</a
+          >
+        </li>
+        <li class="mb-3 md:mb-0">
+          <a
+            href="./services.html"
+            class="nav-links hover:bg-orange-400 rounded-lg p-3"
+            >Services</a
+          >
+        </li>
+        <li class="mb-3 md:mb-0">
+          <a
+            href="./about.html"
+            class="nav-links hover:bg-orange-400 rounded-lg p-3"
+            >About</a
+          >
+        </li>
+        <li class="mb-3 md:mb-0">
+          <a
+            href="./news.html"
+            class="nav-links hover:bg-orange-400 rounded-lg p-3"
+            >News</a
+          >
+        </li>
+        <li class="mb-3 md:mb-0">
+          <a
+            href="./contact.html"
+            class="nav-links hover:bg-orange-400 rounded-lg p-3"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- <nav class="flex p-6 justify-between z-50 sticky">
       <div class="flex item center">
         <img src="./assest/img/nav/LOGO.svg" alt="logo" />
       </div>
@@ -31,7 +87,7 @@
           Contact Us
         </a>
       </div>
-    </nav>
+    </nav> -->
     <section class="Report md:py-32">
       <div class="flex flex-col justify-center items-center">
         <div class="flex py-2 mr-auto pl-10">
@@ -324,5 +380,6 @@
       <hr />
       <p class="text-center py-5">Copyright ® 2021 Lorem All rights Reserved</p>
     </footer>
+    <script src="./javascript/script.js"></script>
   </body>
 </html>
